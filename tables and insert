@@ -1,0 +1,47 @@
+CREATE TABLE Language
+	(Languages VARCHAR(50) PRIMARY KEY,
+	 Author VARCHAR(50) ,
+	 Birthtime INT);
+INSERT
+INTO Language
+VALUES('JAVA','James Gosling',1995),
+	   ('PHP','Rasmus Lerdorf',1994),
+	   ('Python','Guido van Rossum',1989),
+	   ('Javasript','Brendan Eich',1992),
+	   ('Ruby','Yukihiro Matsumoto',1995),
+	   ('C#','Anders Hejlsberg',2000)
+	  
+	  
+
+CREATE TABLE classification
+	(Classes varCHAR(50),
+	languages varchar(50),
+	FOREIGN KEY (languages) REFERENCES language(languages)
+	)
+INSERT
+INTO classification
+VALUES('Scripting language','Javasript'),
+		('Scripting language','Python'),
+('Scripting language','PHP'),
+('Scripting language','Ruby'),
+('Object-Oriented Language','C#'),
+('Object-Oriented Language','JAVA'),
+('Object-Oriented Language','Python'),
+('Object-Oriented Language','PHP')
+
+CREATE  TABLE  FRAMEWORK
+	(frameworks varchar(50) primary key,
+	Languages varchar(50)
+    Foreign key  (languages)  references language(languages)
+)
+
+Insert
+Into framework
+values ('django','Python'),
+('jQuery','Javasript'),
+('Ruby On Rails','Ruby'),
+('.NET','C#'),
+('Spring','JAVA'),
+('JAVA','JAVA'),
+('WEB2PY','Python'),
+('Zend framework','PHP')
