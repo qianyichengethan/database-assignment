@@ -1,0 +1,20 @@
+
+select frameworks
+from framework
+
+select languages
+from language
+
+select languages
+from language
+where Birthtime <1995
+
+select frameworks
+from framework
+where languages='Python'
+
+create view one
+as
+select languages
+from language
+where Birthtime <1995
